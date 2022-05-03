@@ -1,3 +1,18 @@
+import CardList from "../../components/CardList/CardList"
+import NavBar from "../../components/NavBar/NavBar"
+
 export default function CardsPage(){
-  return <h1>Cards Page</h1>
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <CardList />
+      </main>
+      <footer>
+
+      </footer>
+    </>
+  )
 }

@@ -4,7 +4,7 @@ import CardsPage from '../CardsPage/CardsPage';
 import HomePage from '../HomePage/HomePage';
 
 function App() {
-  const user = false
+  const user = true
   return (
     <div className={styles.App}>
       <Routes>
