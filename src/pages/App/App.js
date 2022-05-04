@@ -4,7 +4,9 @@ import CardsPage from '../CardsPage/CardsPage';
 import HomePage from '../HomePage/HomePage';
 
 function App() {
-  const user = true
+  const user = {
+    username: "Mr.Turtle"
+  }
   return (
     <div className={styles.App}>
       <Routes>

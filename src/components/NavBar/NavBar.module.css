@@ -1,0 +1,18 @@
+.NavBar{
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+  background-color: black;
+}
+
+.NavBarItem{
+  border: solid 1px black;
+  padding: 10px;
+  justify-content: center;
+  background-color: white;
+}
+
+.Link{
+  text-decoration: none;
+  color: black;
+}
