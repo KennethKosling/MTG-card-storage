@@ -8,6 +8,11 @@
 .NavBarItem{
   border: solid 1px black;
   padding: 10px;
+  background-color: white;
+}
+.NavBarUserName{
+  border: solid 1px black;
+  padding: 10px;
   justify-content: center;
   background-color: white;
 }
