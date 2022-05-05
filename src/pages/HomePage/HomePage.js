@@ -2,7 +2,7 @@ import { useState } from "react";
 import SignUpForm from "../../components/SignUpForm/SignUpForm";
 import LogInForm from "../../components/LogInForm/LogInForm";
 
-export default function HomePage(){
+export default function HomePage({setUser}){
   const [showLogIn, setShowLogIn] = useState(true)
   
   return(
@@ -10,7 +10,7 @@ export default function HomePage(){
       <div>
         <h3 onClick={() => setShowLogIn(!showLogIn)}>{showLogIn ? 'SIGN UP' : 'LOG IN'}</h3>
       </div>
-      {showLogIn ? <LogInForm /> : <SignUpForm />}
+      {showLogIn ? <LogInForm setUser={setUser}/> : <SignUpForm setUser={setUser}/>}
     </main>
   )
 }
