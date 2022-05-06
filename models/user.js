@@ -15,7 +15,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true,
     minLength: 6
-  }
+  },
+  cards: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Card',
+  }]
 }, {
   timestamps: true,
   toJSON: {
