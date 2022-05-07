@@ -1,14 +1,14 @@
-import CardList from "../../components/CardList/CardList"
+import NewCardForm from "../../components/NewCardForm/NewCardForm"
 import NavBar from "../../components/NavBar/NavBar"
 
-export default function CardsPage({user, setUser}){
+export default function NewCardsPage({user, setUser}){
   return (
     <>
       <header>
         <NavBar user={user} setUser={setUser}/>
       </header>
       <main>
-        <CardList user={user} />
+        <NewCardForm />
       </main>
       <footer>
 

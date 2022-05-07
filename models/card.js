@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const cardSchema = new mongoose.Schema({
     name: String,
-    foil: Boolean,
     mana: [String],
     type: String,
     desc: String,

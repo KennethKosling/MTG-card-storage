@@ -15,16 +15,15 @@ app.use(require('./config/checkToken'));
 
 app.use('/api/users', require('./routes/api/users'));
 const checkLoggedIn = require('./config/checkLoggedIn');
-// app.use('/cards', checkLoggedIn, require('./routes/cards'));
-// app.use('/decks', checkLoggedIn, require('./routes/decks'));
+app.use('/cards', checkLoggedIn, require('./routes/api/cards'));
 
 
-// app.get('/*', function(req, res) {
-//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 const port = process.env.PORT || 3001;
 
-app.listen(port, function() {
+app.listen(port, () => {
   console.log(`We'll have flying cars in the year ${port}`)
 });

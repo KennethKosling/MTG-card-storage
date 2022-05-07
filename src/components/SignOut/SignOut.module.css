@@ -1,0 +1,11 @@
+.button{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  border: solid 1px black;
+  display: flex;
+  padding: 0px 9px;
+  margin-top: 20px;
+  height: 65px;
+  font-size: 1em;
+  background-color: white;
+  align-items: center;
+}
