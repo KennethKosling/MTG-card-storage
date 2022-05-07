@@ -11,3 +11,9 @@ VSCode, Javascript, CSS, JSX, React, Mongoose, Express, Node, NPM
 
 # Wireframe/ERD
 
+![HomePage](HomePage.png)
+![CardsList](CardsList.png)
+![DecksList](DecksList.png)
+![NewCardPage](NewCardPage.png)
+![Card](Card.png)
+![ERD](ERD.png)
