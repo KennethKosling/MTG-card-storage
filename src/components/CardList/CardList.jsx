@@ -1,15 +1,23 @@
-import { useEffect } from "react"
-import sendRequest from "../../utilities/send-request"
+import { useEffect, useState } from "react"
+import * as cardAPI from "../../utilities/cards-api"
 
 export default function CardList({user}){
+
+  const [data, setData] = useState([])
   
   async function fetchData(){
-    const response = await sendRequest(`http://localhost:3001/cards/${user._id}`)
+    console.log(`User ID is ${user._id}`)
+    const response = await cardAPI.getById(user._id)
+    setData(response)
   } 
 
   useEffect(() => {
     fetchData()
   }, [])
 
-  return user.cards
+  return (
+    <>
+      
+    </>  
+  )
 }

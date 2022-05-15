@@ -1,9 +1,9 @@
 import sendRequest from './send-request';
 
-const BASE_URL = '/api/cards';
+const BASE_URL = `/api/cards`;
 
 export function createCard(cardData){
-  return sendRequest('/cards', 'POST', cardData);
+  return sendRequest(BASE_URL, 'POST', cardData);
 };
 
 export function getAll() {

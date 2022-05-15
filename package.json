@@ -21,8 +21,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "start:dev": "react-scripts start",
+    "back": "nodemon server.js",
+    "front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
