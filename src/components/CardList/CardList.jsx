@@ -17,7 +17,17 @@ export default function CardList({user}){
 
   return (
     <>
-      
+      {
+        data.map((card) => {
+          return (
+            <>
+              <p>
+                {card.name}
+              </p>
+            </>
+          )
+        })
+      }
     </>  
   )
 }

@@ -10,7 +10,10 @@ module.exports = {
 async function create(req, res) {
   try {
     const card = await Card.create(req.body);
-    res.status(200).json();
+    const user = await User.findById(req.user._id)
+    user.cards.push(card._id)
+    user.save()
+    res.status(200).json(card);
   } catch (e) {
     res.status(400).json(e);
   }
@@ -18,11 +21,10 @@ async function create(req, res) {
 
 async function getCards(req, res){
   try{
-    // console.log(req.user)
     const user = await 
       User.find({_id: req.params.id}).
       populate('cards');
-    res.status(200).json(user.cards);
+    res.status(200).json(user[0].cards);
   } catch(e){
     res.status(400).json(e)
   }
